@@ -1,10 +1,5 @@
-# A Flask template with Bootstrap
- Flask template with Bootstrap v5.3.2 for client-server apps. Ready to use to start a new project.
-
-## Info
-Based on:
-- https://code.visualstudio.com/docs/python/tutorial-flask
-- https://github.com/monkeymademe/picamera2-WebUI-Lite
+# Kipi
+Analyze photos with OpenAI Vision and a Raspberry Pi 4 + camera module v1.3.
 
 ## Prerequisite / Getting Started
 
@@ -30,6 +25,12 @@ include-system-site-packages = false
 # to
 include-system-site-packages = true
 ```
+
+## Further reading
+This project is inspired by:
+- https://code.visualstudio.com/docs/python/tutorial-flask
+- https://github.com/monkeymademe/picamera2-WebUI-Lite
+
 ## License
 All my publications in this project are free to use and are subject to the MIT license.
 
