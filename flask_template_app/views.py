@@ -4,7 +4,11 @@ from . import app
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", title="Flask Template",)
+
+@app.route("/camera")
+def camera():
+    return render_template("camera.html")
 
 @app.route("/about/")
 def about():

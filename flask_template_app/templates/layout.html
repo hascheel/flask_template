@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
-    </head>
-
-    <body>
-        <div class="navbar">
-            <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
-            <a href="{{ url_for('about') }}" class="navbar-item">About</a>
-        </div>
-
-        <div class="body-content">
-            {% block content %}
-            {% endblock %}
-            <hr/>
-            <footer>
-                <p>&copy; 2018</p>
-            </footer>
-        </div>
-    </body>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-icons.css') }}">
+    <script async type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-eyeglasses"></i> Flask Template</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('camera') }}">Camera</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+  <script async type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
 </html>
