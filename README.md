@@ -1,11 +1,6 @@
 # A Flask template with Bootstrap
  Flask template with Bootstrap v5.3.2 for client-server apps. Ready to use to start a new project.
 
-## Info
-Based on:
-- https://code.visualstudio.com/docs/python/tutorial-flask
-- https://github.com/monkeymademe/picamera2-WebUI-Lite
-
 ## Prerequisite / Getting Started
 
 ```shell
@@ -30,6 +25,12 @@ include-system-site-packages = false
 # to
 include-system-site-packages = true
 ```
+
+## Further reading
+This project was inspired by:
+- https://code.visualstudio.com/docs/python/tutorial-flask
+- https://github.com/monkeymademe/picamera2-WebUI-Lite
+
 ## License
 All my publications in this project are free to use and are subject to the MIT license.
 
