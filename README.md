@@ -1,17 +1,20 @@
 # A Flask template with Bootstrap
- Flask template with Bootstrap v5.3.2 for client-server apps. Ready to use to start a new project.
+ A Flask template with Bootstrap v5.3.2 for client-server apps. Ready to use to start a new project.
 
-## Prerequisite / Getting Started
+## Getting Started
 
 ```shell
-# create a directory
+# Create a directory
 mkdir flask_template
 cd flask_template
 
-# create a Python virtual environment
+# Create a Python virtual environment
 python -m venv .venv
 
-# install dependencies with pip
+# Activate the virtual environment
+. .venv/bin/activate
+
+# Install dependencies with pip
 python -m pip install flask
 ```
 
@@ -27,6 +30,8 @@ include-system-site-packages = true
 ```
 
 ## Further reading
+- 
+
 This project was inspired by:
 - https://code.visualstudio.com/docs/python/tutorial-flask
 - https://github.com/monkeymademe/picamera2-WebUI-Lite
